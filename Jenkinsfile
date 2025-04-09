@@ -1,4 +1,4 @@
-@Library('jenkins-shared-library') _
+@Library('jenkins-shared-lib') _
 
 pipeline {
   agent any
@@ -6,7 +6,7 @@ pipeline {
   stages {
     stage('Clone Repository') {
       steps {
-        git url: 'https://github.com/Jithendra-Jithu/jenkins-shared-2.git', branch: 'main'
+        git url: 'https://github.com/Yeswanthteja1010/jenkins-shared.git', branch: 'main'
       }
     }
 
